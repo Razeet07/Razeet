@@ -1,28 +1,33 @@
-namespace LearningClasses
+  
+using System.Collections.Generic;
+public class Collections
 {
-    internal class Person
+    public void LearnAboutList()
     {
-        //Default parameterless constructor
-        public Person()
-        {
+        List<string> names = new List<string> { "Shyam", "Hari" };
 
-        }
-        public Person(string n, string add)
-        {
-            this.Name = n;
-            this.Address = add;
-        }
-        public Person(string n, string add, byte a)
-        {
-            this.Name = n;
-            this.Address = add;
-            this.Age = a;
-        }
-        public string Name { get; set; }
-        public string Address { get; set; }
-        public byte Age { get; set; }
+        names.Add("Bishal");
+        names.Add("Bikash");
+        names.Add("amit");
+        names.Add("Raman");
 
-        public static string ScientificName = "Homo-sapiens";
+        names.Sort();
+    }
+    public void LearnAboutDictionary()
+    {
+        //Holds key-value pairs
+        Dictionary<string, string> countryCapitals = new Dictionary<string, string>
+        {
+            ["Bhutan"] = "Thimpu",
+            ["China"] = "Beijing"
+        };
+
+        countryCapitals.Add("Nepal", "Kathmandu");
+        countryCapitals.Add("India", "Delhi");
+        countryCapitals.Add("USA", "DC");
+        countryCapitals.Add("Russia", "Mosco");
+
+
 
     }
 }
